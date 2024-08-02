@@ -10,7 +10,7 @@ program
     .option('-p, --path <name>', 'Specify the dir path')
     .option('-c, --code <code>', 'Specify the code')
     .option('-s, --sourceType <type>', 'Specify js source type', 'module')
-    .option('-o, --output <name>', 'Specify the output path', 'output.json')
+    .option('-o, --output <name>', 'Specify the output path', 'output.html')
 
 program.parse(process.argv);
 
