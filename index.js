@@ -11,6 +11,7 @@ program
     .option('-c, --code <code>', 'Specify the code')
     .option('-s, --sourceType <type>', 'Specify js source type', 'module')
     .option('-o, --output <name>', 'Specify the output path', 'output.html')
+    .option('-i, --ignore <name>', 'Specify the ignore pattern', 'node_modules/**')
 
 program.parse(process.argv);
 
