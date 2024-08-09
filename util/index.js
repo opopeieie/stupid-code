@@ -35,7 +35,10 @@ export const formatOutputJsontoHTMLList = (data) => {
     });
 
     html += '</ul>\n';
-    rankAuthors.forEach((value, key) => {
+    const sortedEntries = Array.from(rankAuthors.entries()).sort(([, valueA], [, valueB]) => valueB - valueA);
+    const sortedMap = new Map(sortedEntries);
+
+    sortedMap.forEach((value, key) => {
         html += `    <div><strong>Author:</strong> ${key} <strong>Count:</strong> ${value}</div>\n`;
     })
     html += '</body>\n';
