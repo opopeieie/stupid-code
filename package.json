@@ -3,11 +3,12 @@
   "version": "11.1.1",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "stupidcode": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opopeieie/stupid-code.git"
   },
   "author": "",
   "license": "ISC",
