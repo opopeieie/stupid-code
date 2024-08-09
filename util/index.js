@@ -12,15 +12,13 @@ export const formatOutputJsontoHTMLList = (data) => {
     let html = '<ul>\n';
 
     data.forEach(fileData => {
-        html += `    <li>\n        <strong>File:</strong> ${fileData.file}\n`;
         if (fileData.identifiers.length > 0) {
+            html += `    <li>\n        <strong>File:</strong> ${fileData.file}\n`;
             html += '        <ul>\n';
             fileData.identifiers.forEach(identifier => {
-                html += `            <li><strong>Line:</strong> ${identifier.line} <strong>Snippet:</strong> ${identifier.snippet} <strong>Author:</strong> ${identifier.author}</li>\n`;
+                html += `            <li><strong>Line:</strong> ${identifier.line} <strong>Snippet:</strong> ${identifier.snippet} <strong>Author:</strong> <span style="background-color: yellow">${identifier.author}</span></li>\n`;
             });
             html += '        </ul>\n';
-        } else {
-            html += '        <ul>\n            <li>No identifiers</li>\n        </ul>\n';
         }
         html += '    </li>\n';
     });
