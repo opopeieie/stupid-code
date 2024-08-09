@@ -1,6 +1,6 @@
 {
   "name": "stupid-code",
-  "version": "11.1.4",
+  "version": "11.1.5",
   "main": "index.js",
   "type": "module",
   "bin": {
